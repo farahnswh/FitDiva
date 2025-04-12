@@ -9,3 +9,8 @@ sign_up_btn.addEventListener("click", () => {
 sign_in_btn.addEventListener("click", () => {
   container.classList.remove("sign-up-mode");
 });
+
+document.querySelector(".sign-in-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Mencegah form dikirim ke server
+  window.location.href = "home.html"; // Redirect ke halaman utama
+});
